@@ -1,0 +1,65 @@
+$bg-color: #f9fdff;
+$blue-line: #becbd8;
+//$bg-img: url('../img/header/background.png');
+$bg-img: url('../img/header/background2.png');
+//$bg-img: url('../img/header/homebg.png');
+$after-bg: url(../img/header/wave.png);
+$sec-m: 35vh;
+$paragraph-color: #666666;
+$orange-line: #ff6b00;
+$orange: #ffc002;
+
+$green-line: #a8ca3f;
+$light-green: #e8edc9;
+$white: white;
+$border-width: 5px;
+@mixin lineOrange {
+  border-bottom: 3px solid $orange-line;
+}
+
+@mixin lineGreen {
+  border-bottom: 3px solid $green-line;
+}
+
+@mixin circled {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: $green-line;
+  border: 7px solid #e8edc9;
+  color: $white;
+}
+
+@mixin border-3 {
+  border-right: $border-width solid $green-line;
+  border-bottom: $border-width solid $green-line;
+  border-left: $border-width solid $green-line;
+  border-top: $border-width solid $green-line;
+  border-radius: 20px;
+}
+
+@mixin input-btn {
+  width: 9.375rem;
+  padding: 25px 25px 20px 55px;
+  background-color: $bg-color;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin btn-out {
+  background-color: $orange;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin btn-in {
+  background-color: $orange;
+  border-radius: 100px;
+  border: 2px solid #ffd44e;
+  outline: none;
+  cursor: pointer;
+}
